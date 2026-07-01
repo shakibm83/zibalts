@@ -1,4 +1,5 @@
-const results = {
+export type resultId = 100 | 102 | 103 | 104 | 105 | 106 | 113 | 140 | 201 | 202 | 203 | "-1";
+export const results = {
     100: "موفق",
     102: "merchant یافت نشد.",
     103: "merchant غیرفعال است. با پشتیبانی تماس حاصل کنید.",
@@ -13,7 +14,8 @@ const results = {
     "-1": "خطا"
 };
 
-const statuses = {
+export type statusId = "-100" | "-1" | "-2" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
+export const statuses = {
     "-100": "خطا",
     "-1": "در انتظار پرداخت",
     "-2": "خطای داخلی",
@@ -32,10 +34,10 @@ const statuses = {
 }
 
 export default {
-    getPersianMessage: (result: any = -1) => {
+    getPersianMessage: (result: resultId = "-1") => {
         return results[result];
     },
-    getPersianStatus: (status: any = -100) => {
+    getPersianStatus: (status: statusId = "-100") => {
         return statuses[status]
     }
 }
