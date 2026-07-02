@@ -91,4 +91,4 @@ declare class Zibal {
     verify(configs: ZibalVerify): Promise<ZibalVerifyResponse>;
 }
 
-export { Zibal };
+export { Zibal, type ZibalRequest, type ZibalRequestResponse, type ZibalVerify, type ZibalVerifyResponse };
