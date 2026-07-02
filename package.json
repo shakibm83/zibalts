@@ -1,6 +1,6 @@
 {
   "name": "zibalts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zibal IPG Module changed for typescript",
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts"
   },
-  "exports":{
+  "exports": {
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs",
