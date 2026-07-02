@@ -3,6 +3,8 @@ import axios from "axios";
 import errors from "./errors.js";
 import type { ZibalRequest, ZibalRequestResponse, ZibalVerify, ZibalVerifyResponse } from "./types.ts";
 
+
+export type { ZibalRequest, ZibalRequestResponse, ZibalVerify, ZibalVerifyResponse }
 export class Zibal {
     private merchant = "zibal";
     private callbackUrl = "";
